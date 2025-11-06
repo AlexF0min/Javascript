@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom demo</title>
+    <style>
+      body {
+        display:block;
+      }
+      .siteheader, .maincontent {
+        display: flex;
+        justify-content: center;
+      }
+      .siteheader {
+        margin-top: 4em;
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .maincontent {
+        margin-top:2em;
+        font-size:1.5em;
+        font-weight: bolder;
+        color:blue
+      }
+    </style>
+  </head>
+  <body>
+    <header class="siteheader">
+        <div class="my-Header">
+          Dom test 1
+        </div>        
+    </header>
+    <main id = "add-text" class="maincontent">
+    </main>
+    <script>
+      const newText = document.getElementById("add-text"); // <----------------- here
+      newText.textContent += "Ad astra per aspera."; 
+    </script>
+  </body>
+</html>
