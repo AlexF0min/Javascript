@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head><meta charset=utf-8 />
+        <title>Insert row in a table</title>
+        <style>
+          table, tr, td {
+            border: 1px solid black;
+            padding: 4px;
+          }
+        </style>
+  </head>
+  <body>
+    <table id="sampleTable">
+     <tr>
+      <td>Row1 cell1</td>
+      <td>Row1 cell2</td>
+     </tr>
+    <tr>
+      <td>Row2 cell1</td>
+      <td>Row2 cell2</td>
+     </tr>
+    </table><br>
+  <input type="button" onclick="insertRow()" value="Insert row"> 
+  <script>
+    //  JavaScript function to add rows to a table.
+    function insertRow() {
+      const myTabble = document.getElementById("sampleTable");
+      const addRow = myTabble.insertRow();
+      const newCell = addRow.insertCell(0);
+      const newCell2 = addRow.insertCell(1);
+
+
+    }
+  </script>
+  </body>
+</html>
