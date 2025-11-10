@@ -1,46 +1,59 @@
 * {
-    margin: 0;
-    padding: 0;    
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    background: #f4f4f4;
-    padding: 1rem;
-    text-align: center;
+  background: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
 
 }
 
-.toCenter{
+.toCenter {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   gap: 5px;
 }
+
 .drpDwn {
   display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    
-    overflow: auto;
-    padding: 1rem 1rem;
-    list-style: none; /* Just for myList */
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+
+  overflow: auto;
+  padding: 1rem 1rem;
+  list-style: none;
+  /* Just for myList */
 }
 
-.menus{
-    margin-bottom: 40px; /* just for space with flower and picture */ 
-}
-.picture img{
-    width: 150px;
+.menus {
+  margin-bottom: 40px;
+  /* just for space with flower and picture */
 }
 
+.picture img {
+  width: 150px;
+}
 
+img {
+  height: auto;
+  transition-duration: 0.9s;
+  cursor: default;
+}
 
+img.enlarged {
+  /* transform: scale(1.2); */
+  zoom: 1.5;
+  width: 250px;
 
-
+  
+}

@@ -45,6 +45,18 @@ const imagePaths = {
       const selectedColor = this.value;
       image.src = imagePaths[selectedColor];
     });
+    //----------------------
+    const img = document.getElementById("imgPath");
+
+    
+    img.addEventListener('mouseover', () => {
+        img.classList.add('enlarged');
+    });
+
+    
+    img.addEventListener('mouseout', () => {
+        img.classList.remove('enlarged');
+    });
   </script>
 </body>
 
